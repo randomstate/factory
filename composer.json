@@ -1,0 +1,31 @@
+{
+    "name": "randomstate/factory",
+    "description": "Easy factories in Laravel (can be used in any PHP project)",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Connor Forsyth",
+            "email": "connor@randomstate.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RandomState\\Factory\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RandomState\\Factory\\Tests\\" : "tests",
+            "Tests\\": "vendor/laravel/laravel/tests"
+        },
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "require-dev": {
+        "laravel/laravel": "^5.7",
+        "phpunit/phpunit": "^7.4",
+        "mockery/mockery": "^1.2"
+    }
+}
